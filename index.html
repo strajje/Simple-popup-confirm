@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">S U B M I T</button>
+        <div class="popup" id="popup">
+            <img src="/1200px-Check_green_circle.svg.png" alt="">
+            <h1>Thank You</h1>
+            <p>Your details has been successfully submitted. Thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+
+
+    </div>
+
+
+
+<script>
+let popup = document.getElementById("popup");
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+</script>
+</body>
+
+
+
+
+
+
+
+
+</html>
